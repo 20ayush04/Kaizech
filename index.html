@@ -5,11 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tag
-  -->
-  <title>Lok Sabha Lens</title>
+  <title>Ridex - Rent your favourite car</title>
 
   <!-- 
     - favicon
@@ -26,22 +22,11 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mr+De+Haviland&family=Roboto:wght@400;500;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
     rel="stylesheet">
-
-  <!-- 
-
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-product-1.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-product-2.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-product-3.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-product-4.jpg">
-  <link rel="preload" as="image" href="./assets/images/hero-product-5.jpg">
-
 </head>
 
-<body id="top">
+<body>
 
   <!-- 
     - #HEADER
@@ -50,32 +35,58 @@
   <header class="header" data-header>
     <div class="container">
 
-      <!-- <div class="input-wrapper">
-        <input type="search" name="search" placeholder="Search Anything..." class="input-field">
+      <div class="overlay" data-overlay></div>
+      <!-- <span >
+      <a href="#" class="logo"  > -->
+        
+        <img src="./assets/images/Data_Crusaders_logo_sys_2.png" alt="Ridex logo" width="20%">
+      <!-- </a>
+    </span> -->
 
-        <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-      </div> -->
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
 
-      <a href="#" class="logo">Lok Sabha Lens</a>
+          <li>
+            <a href="#powerbi" class="navbar-link" data-nav-link>PowerBi</a>
+          </li>
 
-      <div class="header-action">
+          <li>
+            <a href="#google-colab" class="navbar-link" data-nav-link> Google colab</a>
+          </li>
 
-        <!-- <button class="header-action-btn" aria-label="user">
-          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-        </button> -->
+          <li>
+            <a href="#preview" class="navbar-link" data-nav-link>Preview</a>
+          </li>
 
-        <button class="header-action-btn" aria-label="favourite list">
-          About Us
-        </button>
+          <li>
+            <a href="#" class="navbar-link" data-nav-link>About us</a>
+          </li>
 
-        <!-- <button class="header-action-btn" aria-label="cart">
-          <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
+        </ul>
+      </nav>
 
-          <span class="btn-badge">0</span>
-        </button> -->
+      <div class="header-actions">
 
-        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
-          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        <!-- <div class="header-contact">
+          <a href="tel:88002345678" class="contact-link">8 800 234 56 78</a>
+
+          <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
+        </div> -->
+
+        <a href="#" class="btn" aria-labelledby="aria-label-txt">
+          <ion-icon name="car-outline"></ion-icon>
+
+          <span id="aria-label-txt">Explore DashBoard</span>
+        </a>
+
+        <a href="#" class="btn user-btn" aria-label="Profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
         </button>
 
       </div>
@@ -87,400 +98,285 @@
 
 
 
-  <!-- 
-    - #SIDEBAR
-  -->
-
-  <div class="sidebar" data-navbar>
-
-    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-      <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-    </button>
-
-    <div class="wrapper">
-
-      <ul class="sidebar-list">
-
-        <li>
-          <p class="sidebar-list-title">Vote Share Analysis</p>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">Vote Share Analysis</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">Party Performance</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">State-wise Analysis</a>
-        </li>
-
-        <li>
-          <a href="#" class="sidebar-link">Voter Turnout Analysis</a>
-        </li>
-        
-        <li>
-          <a href="#" class="sidebar-link">2004-2024 analysis</a>
-        </li>
-
-      </ul>
-
-     
-
-    </div>
-
-    <nav class="navbar">
-      <ul class="navbar-list">
-
-        <li class="navbar-item">
-          <a href="#home" class="navbar-link" data-nav-link>Home</a>
-        </li>
-
-        <li class="navbar-item">
-          <a href="#about" class="navbar-link" data-nav-link>About</a>
-        </li>
-
-      
-        <li class="navbar-item">
-          <a href="#blog" class="navbar-link" data-nav-link>Blogs</a>
-        </li>
-
-      </ul>
-    </nav>
-
-    <ul class="contact-list">
-
-      <li>
-        <p class="contact-list-title">Contact Us</p>
-      </li>
-
-      <li class="contact-item">
-        <address class="address">
-          69 Halsey St, Ny 10002, New York, United States
-        </address>
-      </li>
-
-      <li class="contact-item">
-        <a href="mailto:support.center@woodex.co" class="contact-link" >support.center@woodex.co</a>
-      </li>
-
-      <li class="contact-item">
-        <a href="tel:00001235567890" class="contact-link">(0000) 1235 567890</a>
-      </li>
-
-    </ul>
-
-    <div class="social-wrapper">
-
-      <p class="social-list-title">Follow US On Socials</p>
-
-      <ul class="social-list">
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-tumblr"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-
-    </div>
-
-  </div>
-
-  <div class="overlay" data-overlay data-nav-toggler></div>
-
-
-
-
-
   <main>
-    <section class="section about" id="about" aria-label="about">
-      <div class="container">
-
-        <!-- <h2 class="section-title">What?</h2> -->
-<br><br><br><br>
-        <p class="section-text">
-          This project aims to analyze and visualize the Lok Sabha election data from 2004 to 2024. The dataset includes detailed information about each parliamentary constituency (PC) across multiple election years, covering various aspects such as voter turnout, winning margins, party performance, and demographic representation.
-        </p>
-      </div>
-    </section> 
     <article>
- <section class="section blog" id="blog" aria-label="blog">
-        <div class="container">
 
-          <div class="title-wrapper">
-            <h2 class="h2 section-title">See What We Offer</h2>
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="powerbi">
+        <div class="container">
+          
+          <div class="hero-content">
+            <h2 class="h1 hero-title">The easy way to analyze qualitative data</h2>
+
+            <p class="hero-text">
+              If you have premium of PowerBi click on <strong>Explore DashBoard</strong> button on nav bar 
+            </p>
           </div>
 
-          <ul class="grid-list">
+          <div class="hero-banner"> </div>
 
-            <li>
-              <div class="blog-card">
+          <div action="" class="hero-form">
 
-                <div class="card-banner img-holder" style="--width: 674; --height: 200;">
-                  <img src="./assets/images/voter-turnout-analysis.png" width="374" height="243" loading="lazy"
-                    alt="Unique products that will impress your home in 2022." class="img-cover">
+            <div class="input-wrapper">
+              <label for="input-1" class="input-label">Pandas , numpy & matplotlib</label>
 
-                  <a href="#" class="card-btn">
-                    <span class="span">Read more</span>
+              <p type="text" name="car-model" id="input-1" class="input-field"
+                placeholder="Are you lookin for a graph?">Are you lookin for a graph?</p>
+            </div>
 
-                    <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>
+            <div class="input-wrapper">
+              <label for="input-2" class="input-label">Probability & Statistics </label>
 
-                
+              <p type="text" name="monthly-pay" id="input-2" class="input-field" placeholder="Which graph are you lookin for?">Using mean ,median & std</p>
+            </div>
 
-              </div>
-            </li>
+            <div class="input-wrapper">
+              <label for="input-3" class="input-label">Hypothesis</label>
 
-          
+              <p type="text" name="year" id="input-3" class="input-field" placeholder="Add a minimal make year">Using z, t, chi, Anova tests</p>
+            </div>
 
+            <button type="button" class="btn">Features</button>
            
-
-            <li>
-              <div class="blog-card">
-
-                <div class="card-banner img-holder" style="--width: 674; --height: 200;">
-                  <img src="./assets/images/vote-share-analysis.png" width="374" height="243" loading="lazy"
-                    alt="Navy Blue & White Striped Area Rugs" class="img-cover">
-
-                  <a href="#" class="card-btn">
-                    <span class="span">Read more</span>
-
-                    <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>
-
-                
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <div class="card-banner img-holder"  style="--width: 674; --height: 200;">
-                  <img src="./assets/images/party-performance-analysis.png" width="374" height="243" loading="lazy"
-                    alt="Woodex White Coated Staircase Floating" class="img-cover">
-
-                  <a href="#" class="card-btn">
-                    <span class="span">Read more</span>
-
-                    <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>   
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <div class="card-banner img-holder"  style="--width: 674; --height: 200;">
-                  <img src="./assets/images/state-wise-analysis.png" width="374" height="243" loading="lazy"
-                    alt="Navy Blue & White Striped Area Rugs" class="img-cover">
-
-                  <a href="#" class="card-btn">
-                    <span class="span">Read more</span>
-
-                    <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                  </a>
-                </div>
-
-                
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <div class="card-banner img-holder"  style="--width: 674; --height: 200;">
-                  <img src="./assets/images/2004-2024-analysis.png" width="374" height="243" loading="lazy"
-                    alt="Woodex White Coated Staircase Floating" class="img-cover">
-
-                  <a href="#" class="card-btn">
-                    <span class="span">Read more</span>
-
-                    <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-
-                  </a>
-                </div>   
-              </div>
-            </li>
-
-          </ul>
-
+          </div>
+          
         </div>
       </section>
 
 
 
-<!-- FINAL Dashboard -->
-      <section class="section hero" id="home" aria-label="home">
+
+
+      <!-- 
+        - #FEATURED CAR
+      -->
+
+      <section class="section featured-car" id="google-colab">
         <div class="container">
 
-          <ul class="hero-list">
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Google Colab</h2>
 
+            <a href="#" class="featured-car-link">
+              <span>View more</span>
 
-            <li class="colspan-2">
-              <div class="hero-card">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+          </div>
 
-                <figure >
-                  <iframe title="Dashboard_Of_Lok_Sabha_Data_Analytics"  width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=01271e5b-7ad9-4ddf-8a11-4307f7cb86a3&autoAuth=true&ctid=8ee8686a-40a5-4a93-9956-a0daa017ae11" frameborder="0" allowFullScreen="true"></iframe>
-                                
+          <ul class="featured-car-list">
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-1.jpg" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300"
+                    class="w-100">
                 </figure>
 
                 <div class="card-content">
-                  <h3>
-                    <a href="#" class="card-title"></a>
-                  </h3>
 
-                  <p class="card-text"></p>
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Numpy-Pandas & Matplotlib</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-list">
+                    Unleash the power of data to explore Lok Sabha elections! Leverage NumPy for calculations, Pandas for data manipulation, and Matplotlib for impactful visualizations. Google Colab provides a free cloud environment to run your Python code. This guide equips you to analyze election data, uncover trends, and gain insights into Indian democracy.
+                  </p>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>To Explore</strong>
+                    </p>
+
+                    <a href="https://colab.research.google.com/drive/1PUkNgT0v9VlJu9utnQEosOimKOjyXxtB?usp=sharing" target="_blank ">
+                      <!-- <button  class="btn fav-btn" aria-label="Add to favourite list">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button> -->
+                      <button  class="btn">See now</button>
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-2.jpg" alt="BMW 3 Series 2019" loading="lazy" width="440" height="300"
+                    class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Probability & Statastics</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-list">
+                    Probability and statistics play crucial roles in analyzing Lok Sabha elections, using historical data, voter demographics, and polling trends to predict outcomes. These methods help in understanding voter behavior and potential election results with a degree of uncertainty due to variables like voter turnout and last-minute changes in public opinion.                  </p>
+
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>To Explore</strong>
+                    </p>
+
+                    <a href="https://colab.research.google.com/drive/1xBqkdVXFxnlrgwi9WuINnVJNgI08RyU7?usp=sharing" target="_blank">
+                    <!-- <button  class="btn fav-btn" aria-label="Add to favourite list">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button> -->
+                    <button  class="btn">See now</button>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="featured-car-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/car-3.jpg" alt="Volkswagen T-Cross 2020" loading="lazy" width="440"
+                    height="300" class="w-100">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-title-wrapper">
+                    <h3 class="h3 card-title">
+                      <a href="#">Hypothesis testing</a>
+                    </h3>
+                  </div>
+
+                  <p class="card-list">
+                    Hypothesis testing in the context of Lok Sabha elections involves formulating assumptions about voter behavior or election outcomes and using statistical methods to test these assumptions. This approach helps in validating predictions and assessing the significance of observed electoral trends, providing a systematic way to make decisions based on data.
+                  <div class="card-price-wrapper">
+
+                    <p class="card-price">
+                      <strong>To Explore</strong>
+                    </p>
+
+                    <a href="https://colab.research.google.com/drive/14aRMLLK0DhFjOg70pI1Oy7-MUU_2_Gqb?usp=sharing"   target="_blank">
+                      <!-- <button  class="btn fav-btn" aria-label="Add to favourite list">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button> -->
+                      <button  class="btn">See now</button>
+                    </a>
+
+                  </div>
+
                 </div>
 
               </div>
             </li>
 
             
-
-
           </ul>
 
         </div>
       </section>
 
-      <section class="section product" id="product" aria-label="product">
+
+
+
+
+      <!-- 
+        - #GET START
+      -->
+
+      <section class="section get-start">
         <div class="container">
 
-      
+          <h2 class="h2 section-title">Get started with 4 simple steps</h2>
 
-          <ul class="grid-list product-list" data-filter="all">
+          <ul class="get-start-list">
 
-            <li class="decoration">
-              <div class="product-card">
+            <li>
+              <div class="get-start-card">
 
-                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
-                  <img src="./assets/images/vote-share-analysis.png" width="300" height="300" loading="lazy"
-                    alt="Animi Dolor Pariatur" class="img-cover">
-
-                  <ul class="card-action-list">
-
-                   
-
-
-                    <li>
-                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
-                       More Info
-                      </button>
-                    </li>
-
-                  </ul>
-
-                
-                </a>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Animi Dolor Pariatur</a>
-                  </h3>
-
-                  <div class="card-price">
-                    <del class="del">$19.00</del>
-
-                    <data class="price" value="10">$10.00</data>
-                  </div>
+                <div class="card-icon icon-1">
+                  <ion-icon name="person-add-outline"></ion-icon>
                 </div>
+
+                <h3 class="card-title">Create a profile</h3>
+
+                <p class="card-text">
+                  If you are going to use a passage of Lorem Ipsum, you need to be sure.
+                </p>
+
+                <a href="#" class="card-link">Get started</a>
 
               </div>
             </li>
 
-            <li class="accessory">
-              <div class="product-card">
+            <li>
+              <div class="get-start-card">
 
-                <a href="#" class="card-banner img-holder has-before" style="--width: 300; --height: 300;">
-                  <img src="./assets/images/product-2.jpg" width="300" height="300" loading="lazy" alt="Art Deco Home"
-                    class="img-cover">
-
-                  <ul class="card-action-list">
-
-                    <li>
-                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                        <ion-icon name="add-outline" aria-hidden="true"></ion-icon>
-                      </button>
-                    </li>
-
-                    <li>
-                      <button class="card-action-btn" aria-label="add to cart" title="add to cart">
-                        <ion-icon name="bag-handle-outline" aria-hidden="true"></ion-icon>
-                      </button>
-                    </li>
-
-                    <li>
-                      <button class="card-action-btn" aria-label="add to whishlist" title="add to whishlist">
-                        <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-                      </button>
-                    </li>
-
-                  </ul>
-
-                  <div class="card-badge">Out of Stock</div>
-                </a>
-
-                <div class="card-content">
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Art Deco Home</a>
-                  </h3>
-
-                  <div class="card-price">
-                    <data class="price" value="30">$30.00</data>
-                  </div>
+                <div class="card-icon icon-2">
+                  <ion-icon name="car-outline"></ion-icon>
                 </div>
+
+                <h3 class="card-title">Tell us what car you want</h3>
+
+                <p class="card-text">
+                  Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                </p>
 
               </div>
             </li>
 
+            <li>
+              <div class="get-start-card">
 
+                <div class="card-icon icon-3">
+                  <ion-icon name="person-outline"></ion-icon>
+                </div>
 
-           
+                <h3 class="card-title">Match with seller</h3>
 
-           
+                <p class="card-text">
+                  It to make a type specimen book. It has survived not only five centuries, but also the leap into
+                  electronic
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="get-start-card">
+
+                <div class="card-icon icon-4">
+                  <ion-icon name="card-outline"></ion-icon>
+                </div>
+
+                <h3 class="card-title">Make a deal</h3>
+
+                <p class="card-text">
+                  There are many variations of passages of Lorem available, but the majority have suffered alteration
+                </p>
+
+              </div>
+            </li>
 
           </ul>
 
         </div>
       </section>
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      
-
-
-
-
-
-      <!-- 
-        - #PRODUCTS
-      -->
-
-      
 
 
 
@@ -490,36 +386,209 @@
         - #BLOG
       -->
 
-     
-
-
-
-      <!-- 
-        - #NEWSLETTER
-      -->
-
-      <section class="section newsletter" aria-label="newsletter">
+      <section class="section blog" id="preview">
         <div class="container">
 
-          <div class="newsletter-card">
+          <h2 class="h2 section-title">Our Analysis</h2>
 
-            <div class="card-content">
-              <h2 class="h2 section-title">Our Newsletter</h2>
+          <ul class="blog-list has-scrollbar">
 
-              <p class="section-text">
-                Subscribe our newsletter and get discount 50% off
-              </p>
-            </div>
+            <li>
+              <div class="blog-card">
 
-            <form action="" class="card-form">
-              <input type="text" name="email_address" placeholder="Have an Idea? Share with Us!">
+                <figure class="card-banner">
 
-              <button type="submit" class="newsletter-btn" aria-label="subscribe">
-                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-              </button>
-            </form>
+                  <a href="#">
+                    <img src="./assets/images/bolg-1 (2).png" alt="Opening of new offices of the company" loading="lazy"
+                      class="w-100">
+                  </a>
 
-          </div>
+                  <!-- <a href="#" class="btn card-badge">Company</a> -->
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Sum of Electors and Voter across the Year</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <p>Year (2004 - 2024)</p>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-2.png" alt="What cars are most vulnerable" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <!-- <a href="#" class="btn card-badge">Repair</a> -->
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Sum of Turnout by top 5 Party across the Year</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <p>Year (2004 - 2024)</p>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-3.png" alt="Statistics showed which average age" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <!-- <a href="#" class="btn card-badge">Cars</a> -->
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Total number of Electors and Votes by State</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <p>Year (2004 - 2024)</p>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-4.png" alt="What´s required when renting a car?" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <!-- <a href="#" class="btn card-badge">Cars</a> -->
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Sum of Electors and Votes by Party for All Years</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <p>Year (2004 - 2024)</p>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/blog-5.png" alt="New rules for handling our cars" loading="lazy"
+                      class="w-100">
+                  </a>
+
+                  <!-- <a href="#" class="btn card-badge">Company</a> -->
+
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Count of PC Name (Candidate Name) by Caste</a>
+                  </h3>
+
+                  <div class="card-meta">
+
+                    <div class="publish-date">
+                      <p>Year (2004 - 2024)</p>
+                    </div>
+
+                    <div class="comments">
+                      <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+
+                      <data value="114">114</data>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
 
         </div>
       </section>
@@ -538,76 +607,40 @@
   <footer class="footer">
     <div class="container">
 
-      <div class="footer-top section">
+      <div class="footer-top">
 
         <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="Ridex logo">
+          </a>
 
-          <a href="#" class="logo">Woodex</a>
-
-          <ul>
-
-            <li class="footer-list-item">
-              <ion-icon name="location-sharp" aria-hidden="true"></ion-icon>
-
-              <address class="address">
-                Woodex, Chicago, USA 2022
-              </address>
-            </li>
-
-            <li class="footer-list-item">
-              <ion-icon name="call-sharp" aria-hidden="true"></ion-icon>
-
-              <a href="tel:+1234567890" class="footer-link">+1234567890</a>
-            </li>
-
-            <li>
-              <ul class="social-list">
-
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" class="social-link">
-                    <ion-icon name="logo-tumblr"></ion-icon>
-                  </a>
-                </li>
-
-              </ul>
-            </li>
-
-          </ul>
-
+          <p class="footer-text">
+            Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
+            consumers an
+            attractive and fun selection.
+          </p>
         </div>
 
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Help & Information</p>
+            <p class="footer-list-title">Company</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Help & Contact Us</a>
+            <a href="#" class="footer-link">About us</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Returns & Refunds</a>
+            <a href="#" class="footer-link">Pricing plans</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Online Stores</a>
+            <a href="#" class="footer-link">Our blog</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Terms & Conditions</a>
+            <a href="#" class="footer-link">Contacts</a>
           </li>
 
         </ul>
@@ -615,55 +648,113 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">About Us</p>
+            <p class="footer-list-title">Support</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">About Us</a>
+            <a href="#" class="footer-link">Help center</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">What We Do</a>
+            <a href="#" class="footer-link">Ask a question</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">FAQ Page</a>
+            <a href="#" class="footer-link">Privacy policy</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contact Us</a>
+            <a href="#" class="footer-link">Terms & conditions</a>
           </li>
 
         </ul>
 
-        <div class="footer-list">
+        <ul class="footer-list">
 
-          <p class="footer-list-title">Newsletter</p>
+          <li>
+            <p class="footer-list-title">Neighborhoods in New York</p>
+          </li>
 
-          <form action="" class="footer-form">
-            <input type="email" name="email_address" placeholder="Your email address" required class="email-field">
+          <li>
+            <a href="#" class="footer-link">Manhattan</a>
+          </li>
 
-            <button type="submit" class="footer-form-btn">
-              <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </button>
-          </form>
+          <li>
+            <a href="#" class="footer-link">Central New York City</a>
+          </li>
 
-          <div class="wrapper">
+          <li>
+            <a href="#" class="footer-link">Upper East Side</a>
+          </li>
 
-            <a href="#" class="footer-link">Term & Condition</a>
-            <a href="#" class="footer-link">Policy</a>
-            <a href="#" class="footer-link">Map</a>
+          <li>
+            <a href="#" class="footer-link">Queens</a>
+          </li>
 
-          </div>
+          <li>
+            <a href="#" class="footer-link">Theater District</a>
+          </li>
 
-        </div>
+          <li>
+            <a href="#" class="footer-link">Midtown</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">SoHo</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Chelsea</a>
+          </li>
+
+        </ul>
 
       </div>
 
       <div class="footer-bottom">
 
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-skype"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
         <p class="copyright">
-          &copy; 2022 All Rights Reserved by <a href="#" class="copyright-link">codewithsadee</a>.
+          &copy; 2024 <a href="#">codewithAyush</a>. All Rights Reserved
         </p>
 
       </div>
@@ -676,21 +767,9 @@
 
 
   <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
-    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
-  </a>
-
-
-
-
-
-  <!-- 
     - custom js link
   -->
-  <script src="./assets/js/script.js" defer></script>
+  <script src="./assets/js/script.js"></script>
 
   <!-- 
     - ionicon link
