@@ -3,7 +3,7 @@
   <br />
   <br />
   
-  <img src="./readme-images/project-logo.png" />
+  <img src="./readme-images/Data_Crusaders_logo_sys.png" />
 
   <h2 align="center">Data Crusaders : make it easy</h2>
 
