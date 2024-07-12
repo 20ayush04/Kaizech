@@ -24,8 +24,8 @@
   --medium-sea-green: hsl(152, 63%, 43%);
   --lavender-blush: hsl(336, 35%, 92%);
   --carolina-blue: hsl(57, 72%, 41%);
-  --columbia-blue: hsl(204, 92%, 90%);
-  --alice-blue-1: hsl(207, 20%, 42%);
+  --columbia-blue: hsl(0, 0%, 100%);
+  --alice-blue-1: hsl(210, 14%, 64%);
   --alice-blue-2: hsl(216, 75%, 97%);
   --alice-blue-3: hsl(216, 38%, 95%);
   --alice-blue-4: hsl(217, 33%, 92%);
@@ -67,7 +67,7 @@
    * transition
    */
 
-  --transition: 0.5s ease;
+  --transition: 0.25ss ease;
 
   /**
    * spacing
