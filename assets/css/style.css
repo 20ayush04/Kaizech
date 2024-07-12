@@ -1030,17 +1030,17 @@ button, a { transition: var(--transition); }
 
   .hero-banner {
     display: block;
-    background: url("../images/hero-banner.png") ;
-    background-size: cover;
+    background: url("../images/hero-banner_sys.png") ;
+    background-size:contain;
     background-position: left;
     position:absolute;
-    top: 150px;
+    top: 170px;
     bottom: 50px;
     left: 65%;
-    margin-right: 150px;
+    margin-right: 160px;
     width: 300px;
-    height: 350px;
-    border-radius: 30px;
+    height: 300px;
+    border-radius: 20px;
     z-index: -1;
     border-color: var(--alice-blue-2);
     box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.4);  transition : box-shadow 0.2s ease-in-out;
@@ -1048,9 +1048,6 @@ button, a { transition: var(--transition); }
 
    /* .hero-banner:hover{
     box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.4);  }  */
-
-
-
   /**
    * FEATURED CAR
    */
