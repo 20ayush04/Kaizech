@@ -23,9 +23,9 @@
   --pale-purple-pantone: hsl(262, 63%, 92%);
   --medium-sea-green: hsl(152, 63%, 43%);
   --lavender-blush: hsl(336, 35%, 92%);
-  --carolina-blue: hsl(57, 72%, 41%);
+  --carolina-blue: hsl(62, 47%, 45%);
   --columbia-blue: hsl(0, 0%, 100%);
-  --alice-blue-1: hsl(210, 14%, 64%);
+  --alice-blue-1: hsl(197, 38%, 45%);
   --alice-blue-2: hsl(216, 75%, 97%);
   --alice-blue-3: hsl(216, 38%, 95%);
   --alice-blue-4: hsl(217, 33%, 92%);
@@ -242,6 +242,7 @@ button, a { transition: var(--transition); }
 .header {
   background: var(--alice-blue-1);
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100%;
@@ -356,7 +357,7 @@ button, a { transition: var(--transition); }
   #HERO
 \*-----------------------------------*/
 
-.hero { padding-top: 120px; }
+.hero { padding-top: 170px; }
 
 .hero-title {
   max-width: 17ch;
@@ -425,6 +426,8 @@ button, a { transition: var(--transition); }
   #FEATURED CAR
 \*-----------------------------------*/
 
+
+.featured-car{padding-top: 80px;}
 .featured-car .title-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -676,6 +679,7 @@ button, a { transition: var(--transition); }
   #BLOG
 \*-----------------------------------*/
 
+.blog{padding-top: 80px;}
 .blog .section-title { margin-bottom: 30px; }
 
 .blog-card {
@@ -822,7 +826,8 @@ button, a { transition: var(--transition); }
 .footer-list:last-child > li:first-child { column-span: all; }
 
 .footer-bottom {
-  background: var(--gradient);
+  background: var(--alice-blue-1);
+  /* background: var(--gradient); */
   border: 1px solid var(--white);
   border-radius: var(--radius-18) var(--radius-18) 0 0;
   padding: 20px;
