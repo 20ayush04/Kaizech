@@ -364,6 +364,48 @@ button, a { transition: var(--transition); }
 
 .hero { padding-top: 170px; }
 
+.hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.hero-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.8fr;
+}
+
+.input-wrapper:not(:last-of-type) {
+  border-bottom: none;
+  border-right: 1px solid hsla(0, 0%, 0%, 0.08);
+}
+
+.input-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hero-banner {
+  display: block;
+  background: url("../images/hero-banner_sys.png") ;
+  background-size:contain;
+  background-position: left;
+  position:absolute;
+  top: 170px;
+  bottom: 50px;
+  left: 65%;
+  margin-right: 160px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  z-index: -1;
+  border-color: var(--alice-blue-2);
+  box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.4);  transition : box-shadow 0.2s ease-in-out;
+}
+
 .hero-title {
   max-width: 17ch;
   margin-bottom: 15px;
@@ -439,8 +481,8 @@ button, a { transition: var(--transition); }
 \*-----------------------------------*/
 
 
-.featured-car{padding-top: 80px;}
-.featured-car .title-wrapper {
+.google-colab{padding-top: 80px;}
+.google-colab .title-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -450,7 +492,7 @@ button, a { transition: var(--transition); }
 }
 
 
-.featured-car-link {
+.google-colab-link {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -458,24 +500,24 @@ button, a { transition: var(--transition); }
   font-size: var(--fs-6);
 }
 
-.featured-car-link span { transition: var(--transition); }
+.google-colab-link span { transition: var(--transition); }
 
-.featured-car-link:is(:hover, :focus) span { color: var(--space-cadet); }
+.google-colab-link:is(:hover, :focus) span { color: var(--space-cadet); }
 
-.featured-car-link ion-icon {
+.google-colab-link ion-icon {
   margin-top: 3px;
   transition: var(--transition);
 }
 
-.featured-car-link:is(:hover, :focus) ion-icon { color: var(--carolina-blue); }
+.google-colab-link:is(:hover, :focus) ion-icon { color: var(--carolina-blue); }
 
-.featured-car-list {
+.google-colab-list {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 30px;
 }
 
-.featured-car-card {
+.google-colab-card {
   background: var(--gradient);
   border: 1px solid var(--white);
   border-radius: var(--radius-18);
@@ -483,26 +525,26 @@ button, a { transition: var(--transition); }
   box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.2s ease-in-out;
 }
-/* .featured-car-card:hover{
+/* .google-colab-card:hover{
   box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.4);
 } */
 
 
-.featured-car-card .card-banner {
+.google-colab-card .card-banner {
   background: hsla(0, 0%, 0%, 0.2);
   aspect-ratio: 3 / 2;
   border-radius: var(--radius-18);
   overflow: hidden;
 }
 
-.featured-car-card .card-banner > img {
+.google-colab-card .card-banner > img {
   height: 100%;
   object-fit: cover;
 }
 
-.featured-car-card .card-content { padding: 20px 10px 10px; }
+.google-colab-card .card-content { padding: 20px 10px 10px; }
 
-.featured-car-card .card-title-wrapper {
+.google-colab-card .card-title-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -510,9 +552,9 @@ button, a { transition: var(--transition); }
   margin-bottom: 15px;
 }
 
-.featured-car-card .card-title { width: calc(100% - 60px); }
+.google-colab-card .card-title { width: calc(100% - 60px); }
 
-.featured-car-card .card-title > a {
+.google-colab-card .card-title > a {
   color: inherit;
   width: 100%;
   white-space: nowrap;
@@ -520,9 +562,9 @@ button, a { transition: var(--transition); }
   text-overflow: ellipsis;
 }
 
-.featured-car-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
+.google-colab-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
 
-.featured-car-card .year {
+.google-colab-card .year {
   font-family: var(--ff-nunito);
   font-size: var(--fs-6);
   font-weight: var(--fw-600);
@@ -531,7 +573,7 @@ button, a { transition: var(--transition); }
   border-radius: var(--radius-14);
 }
 
-.featured-car-card .card-list {
+.google-colab-card .card-list {
   /*display: grid;*/ 
   grid-template-columns: 1fr;
   gap: 5px;
@@ -540,24 +582,24 @@ button, a { transition: var(--transition); }
   margin-bottom: 15px; 
 } 
 
-.featured-car-card .card-list-item {
+.google-colab-card .card-list-item {
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.featured-car-card .card-list-item ion-icon {
+.google-colab-card .card-list-item ion-icon {
   font-size: 20px;
   color: var(--carolina-blue);
   --ionicon-stroke-width: 38px;
 }
 
-.featured-car-card .card-item-text {
+.google-colab-card .card-item-text {
   color: var(--independence);
   font-size: var(--fs-6);
 }
 
-.featured-car-card .card-price-wrapper {
+.google-colab-card .card-price-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -565,23 +607,23 @@ button, a { transition: var(--transition); }
   gap: 15px;
 }
 
-.featured-car-card .card-price {
+.google-colab-card .card-price {
   font-family: var(--ff-nunito);
   font-size: var(--fs-6);
   color: var(--space-cadet);
 }
 
-.featured-car-card .card-price strong {
+.google-colab-card .card-price strong {
   font-size: var(--fs-3);
   font-weight: var(--fw-400);
 }
 
-.featured-car-card .btn:last-child {
+.google-colab-card .btn:last-child {
   --height: 36px;
   min-width: 100%;
 }
 
-.featured-car-card .fav-btn {
+.google-colab-card .fav-btn {
   --background: var(--beau-blue);
   --color: var(--blue-jeans);
   --height: 36px;
@@ -589,9 +631,9 @@ button, a { transition: var(--transition); }
   --shadow-2: none;
 }
 
-.featured-car-card .fav-btn ion-icon { font-size: 18px; }
+.google-colab-card .fav-btn ion-icon { font-size: 18px; }
 
-.featured-car-card .fav-btn:is(:hover, :focus) {
+.google-colab-card .fav-btn:is(:hover, :focus) {
   --background: var(--lavender-blush);
   --color: var(--red-salsa);
 }
@@ -696,10 +738,10 @@ button, a { transition: var(--transition); }
   #BLOG
 \*-----------------------------------*/
 
-.blog{padding-top: 80px;}
-.blog .section-title { margin-bottom: 30px; }
+.preview{padding-top: 80px;}
+.preview .section-title { margin-bottom: 30px; }
 
-.blog-card {
+.preview-card {
   background: var(--alice-blue-2);
   border-radius: var(--radius-18);
   border: 1px solid var(--white);
@@ -709,24 +751,24 @@ button, a { transition: var(--transition); }
   transition : box-shadow 0.2s ease-in-out;
 }
 
-.blog-card:hover{
+.preview-card:hover{
   box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.4);
 }
 
-.blog-card .card-banner {
+.preview-card .card-banner {
   aspect-ratio: 3 / 2;
   position: relative;
   overflow: hidden;
 }
 
-.blog-card .card-banner a:first-child { height: 100%; }
+.preview-card .card-banner a:first-child { height: 100%; }
 
-.blog-card .card-banner img {
+.preview-card .card-banner img {
   height: 100%;
   object-fit: cover;
 }
 
-.blog-card .card-badge {
+.preview-card .card-badge {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -734,21 +776,21 @@ button, a { transition: var(--transition); }
   --width: 92px;
 }
 
-.blog-card .card-content { padding: 20px; }
+.preview-card .card-content { padding: 20px; }
 
-.blog-card .card-title { margin-bottom: 20px; }
+.preview-card .card-title { margin-bottom: 20px; }
 
-.blog-card .card-title > a { color: inherit; }
+.preview-card .card-title > a { color: inherit; }
 
-.blog-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
+.preview-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
 
-.blog-card .card-meta {
+.preview-card .card-meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.blog-card :is(.publish-date, .comments) {
+.preview-card :is(.publish-date, .comments) {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -756,12 +798,12 @@ button, a { transition: var(--transition); }
   color: var(--independence);
 }
 
-.blog-card :is(.publish-date, .comments) ion-icon {
+.preview-card :is(.publish-date, .comments) ion-icon {
   font-size: 15px;
   --ionicon-stroke-width: 50px;
 }
 
-.blog .has-scrollbar {
+.preview .has-scrollbar {
   display: flex;
   gap: 20px;
   scroll-snap-type: inline mandatory;
@@ -769,7 +811,7 @@ button, a { transition: var(--transition); }
   padding-bottom: 20px;
 }
 
-.blog .has-scrollbar > li {
+.preview .has-scrollbar > li {
   flex-shrink: 0;
   max-width: 330px;
   width: 100%;
@@ -854,6 +896,7 @@ button, a { transition: var(--transition); }
   border: 1px solid var(--black);
   border-radius: var(--radius-18) var(--radius-18) 0 0;
   padding: 20px;
+  box-shadow: 80px 80px 70px rgba(0, 0, 0, 0.4);
 }
 
 .social-list {
@@ -893,11 +936,11 @@ button, a { transition: var(--transition); }
    * FEATURED CAR
    */
 
-  .featured-car-card .card-list { grid-template-columns: 1fr 1fr; }
+  .google-colab-card .card-list { grid-template-columns: 1fr 1fr; }
 
-  .featured-car-card .card-price { margin-right: auto; }
+  .google-colab-card .card-price { margin-right: auto; }
 
-  .featured-car-card .btn:last-child {
+  .google-colab-card .btn:last-child {
     min-width: max-content;
     padding-inline: 15px;
   }
@@ -998,61 +1041,10 @@ button, a { transition: var(--transition); }
     font-size: var(--fs-7);
   }
 
-
-
-  /**
-   * HERO
+   /* FEATURED CAR
    */
 
-  .hero {
-    position: relative;
-    min-height: 85vh;
-    display: flex;
-    align-items: center;
-    z-index: 1;
-  }
-
-  .hero-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 0.8fr;
-  }
-
-  .input-wrapper:not(:last-of-type) {
-    border-bottom: none;
-    border-right: 1px solid hsla(0, 0%, 0%, 0.08);
-  }
-
-  .input-label {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  .hero-banner {
-    display: block;
-    background: url("../images/hero-banner_sys.png") ;
-    background-size:contain;
-    background-position: left;
-    position:absolute;
-    top: 170px;
-    bottom: 50px;
-    left: 65%;
-    margin-right: 160px;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-    z-index: -1;
-    border-color: var(--alice-blue-2);
-    box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.4);  transition : box-shadow 0.2s ease-in-out;
-  }
-
-   /* .hero-banner:hover{
-    box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.4);  }  */
-  /**
-   * FEATURED CAR
-   */
-
-  .featured-car-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .google-colab-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 
 
@@ -1115,9 +1107,9 @@ button, a { transition: var(--transition); }
    * BLOG
    */
 
-  .blog .has-scrollbar { padding-bottom: 50px; }
+  .preview .has-scrollbar { padding-bottom: 50px; }
 
-  .blog .has-scrollbar > li { max-width: 450px; }
+  .preview .has-scrollbar > li { max-width: 450px; }
 
 
 
@@ -1216,7 +1208,7 @@ button, a { transition: var(--transition); }
    * FEATURED CAR 
    */
 
-  .featured-car-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .google-colab-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 
 
 
@@ -1232,7 +1224,7 @@ button, a { transition: var(--transition); }
    * BLOG
    */
 
-  .blog .has-scrollbar > li {
+  .preview .has-scrollbar > li {
     max-width: 340px;
     scroll-snap-align: center;
   }
