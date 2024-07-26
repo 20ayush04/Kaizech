@@ -390,12 +390,12 @@ button, a { transition: var(--transition); }
 
 .hero-banner {
   display: block;
-  background: url("../images/hero-banner_sys.png") ;
+  background: url("../images/hero-banner_sys_1.png") ;
   background-size:contain;
   background-position: left;
   position:absolute;
   top: 170px;
-  bottom: 50px;
+  bottom: 80px;
   left: 65%;
   margin-right: 160px;
   width: 300px;
