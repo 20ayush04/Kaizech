@@ -469,7 +469,7 @@ button, a { transition: var(--transition); }
   --width: calc(100% - 40px);
   --height: 50px;
   margin: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 
@@ -477,7 +477,7 @@ button, a { transition: var(--transition); }
 
 
 /*-----------------------------------*\
-  #FEATURED CAR
+  #Google-Colab
 \*-----------------------------------*/
 
 
@@ -488,7 +488,7 @@ button, a { transition: var(--transition); }
   justify-content: space-between;
   align-items: center;
   gap: 10px 15px;
-  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 
@@ -514,7 +514,7 @@ button, a { transition: var(--transition); }
 .google-colab-list {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 30px;
+  gap: 5px;
 }
 
 .google-colab-card {
@@ -522,15 +522,32 @@ button, a { transition: var(--transition); }
   border: 1px solid var(--white);
   border-radius: var(--radius-18);
   padding: 10px;
+  width: 400px;
+  margin-top: 10px;
   box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.4);
   transition: box-shadow 0.2s ease-in-out;
 }
-/* .google-colab-card:hover{
-  box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.4);
-} */
 
+.google-colab-card-2 {
+  background: var(--gradient);
+  border: 1px solid var(--white);
+  border-radius: var(--radius-18);
+  padding: 10px;
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 170px;
+  box-shadow: 20px 30px 30px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.2s ease-in-out;
+}
 
 .google-colab-card .card-banner {
+  background: hsla(0, 0%, 0%, 0.2);
+  aspect-ratio: 3 / 2;
+  border-radius: var(--radius-18);
+  overflow: hidden;
+}
+
+.google-colab-card-2 .card-banner {
   background: hsla(0, 0%, 0%, 0.2);
   aspect-ratio: 3 / 2;
   border-radius: var(--radius-18);
@@ -542,7 +559,13 @@ button, a { transition: var(--transition); }
   object-fit: cover;
 }
 
+.google-colab-card-2 .card-banner > img {
+  height: 100%;
+  object-fit: cover;
+}
 .google-colab-card .card-content { padding: 20px 10px 10px; }
+
+.google-colab-card-2 .card-content { padding: 20px 10px 10px; }
 
 .google-colab-card .card-title-wrapper {
   display: flex;
@@ -552,7 +575,17 @@ button, a { transition: var(--transition); }
   margin-bottom: 15px;
 }
 
+.google-colab-card-2 .card-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
 .google-colab-card .card-title { width: calc(100% - 60px); }
+
+.google-colab-card-2 .card-title { width: calc(100% - 60px); }
 
 .google-colab-card .card-title > a {
   color: inherit;
@@ -562,42 +595,27 @@ button, a { transition: var(--transition); }
   text-overflow: ellipsis;
 }
 
+.google-colab-card-2 .card-title > a {
+  color: inherit;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .google-colab-card .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
 
-.google-colab-card .year {
-  font-family: var(--ff-nunito);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-600);
-  padding: 3px 12px;
-  border: 2px dashed hsla(204, 91%, 53%, 0.4);
-  border-radius: var(--radius-14);
-}
+.google-colab-card-2 .card-title > a:is(:hover, :focus) { color: var(--carolina-blue); }
 
-.google-colab-card .card-list {
-  /*display: grid;*/ 
-  grid-template-columns: 1fr;
-  gap: 5px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.1);
-  margin-bottom: 15px; 
-} 
-
-.google-colab-card .card-list-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.google-colab-card .card-list-item ion-icon {
-  font-size: 20px;
-  color: var(--carolina-blue);
-  --ionicon-stroke-width: 38px;
-}
-
-.google-colab-card .card-item-text {
+.card-list{
   color: var(--independence);
-  font-size: var(--fs-6);
+  margin-top: 100px;
+  font-weight: var(--fw-600);
+  font-size: var(--fs-5);
+  line-height: 2;  
+  
 }
+
 
 .google-colab-card .card-price-wrapper {
   display: flex;
@@ -607,15 +625,13 @@ button, a { transition: var(--transition); }
   gap: 15px;
 }
 
-.google-colab-card .card-price {
-  font-family: var(--ff-nunito);
-  font-size: var(--fs-6);
-  color: var(--space-cadet);
-}
 
-.google-colab-card .card-price strong {
-  font-size: var(--fs-3);
-  font-weight: var(--fw-400);
+.google-colab-card-2 .card-price-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
 }
 
 .google-colab-card .btn:last-child {
@@ -623,20 +639,38 @@ button, a { transition: var(--transition); }
   min-width: 100%;
 }
 
-.google-colab-card .fav-btn {
-  --background: var(--beau-blue);
-  --color: var(--blue-jeans);
+
+.google-colab-card-2 .btn:last-child {
   --height: 36px;
-  --width: 36px;
-  --shadow-2: none;
+  min-width: 100%;
 }
 
-.google-colab-card .fav-btn ion-icon { font-size: 18px; }
 
-.google-colab-card .fav-btn:is(:hover, :focus) {
-  --background: var(--lavender-blush);
-  --color: var(--red-salsa);
-}
+/* .google-colab-card .year {
+  font-family: var(--ff-nunito);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-600);
+  padding: 3px 12px;
+  border: 2px dashed hsla(204, 91%, 53%, 0.4);
+  border-radius: var(--radius-14);
+} */
+
+/* .google-colab-card .card-list-item ion-icon {
+  font-size: 20px;
+  color: var(--carolina-blue);
+  --ionicon-stroke-width: 38px;
+} */
+
+/* .google-colab-card .card-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+} */
+
+/* .google-colab-card .card-item-text {
+  color: var(--independence);
+  font-size: var(--fs-6);
+} */
 
 
 
@@ -659,6 +693,9 @@ button, a { transition: var(--transition); }
   border-radius: var(--radius-18);
   border: 1px solid var(--white);
   transition: var(--transition);
+  height: 150px;
+  width: 350px;
+  margin-top: 50px;
 }
 
 .get-start-card:hover {
@@ -709,7 +746,21 @@ button, a { transition: var(--transition); }
   margin-bottom: 15px;
 }
 
-.get-start-card .card-text { color: var(--independence); }
+.get-start-list .card-text { color: var(--independence);
+  font-size: var(--fs-1);
+  
+      margin-top: 80px;
+    font-size: var(--fs-4); }
+
+/* .h2.card-text{
+  margin-bottom: 500px;
+  padding-left: 500px;
+  
+    padding-left: 300px;
+    margin-top: 50px;
+    font-size: large;
+  
+} */
 
 .get-start-card .card-link {
   position: relative;
@@ -738,7 +789,7 @@ button, a { transition: var(--transition); }
   #BLOG
 \*-----------------------------------*/
 
-.preview{padding-top: 80px;}
+.preview{padding-top: 100px;}
 .preview .section-title { margin-bottom: 30px; }
 
 .preview-card {
@@ -986,6 +1037,9 @@ button, a { transition: var(--transition); }
 
 
 
+
+
+
 /**
  * responsive for large than 768px screen
  */
@@ -1199,7 +1253,7 @@ button, a { transition: var(--transition); }
     --width: calc(100% - 40px);
     --height: 50px;
     margin: 20px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
   }
 
 
@@ -1208,7 +1262,8 @@ button, a { transition: var(--transition); }
    * FEATURED CAR 
    */
 
-  .google-colab-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  /* .google-colab-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } */
+  
 
 
 
@@ -1216,8 +1271,8 @@ button, a { transition: var(--transition); }
    * GET START
    */
 
-  .get-start-list { grid-template-columns: repeat(4, 1fr); }
-
+  /* .get-start-list { grid-template-columns: repeat(1, 1fr); } */
+  
 
 
   /**
