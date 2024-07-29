@@ -645,6 +645,7 @@ button, a { transition: var(--transition); }
 .google-colab-card-2 .btn:last-child {
   --height: 36px;
   min-width: 100%;
+  padding-inline: 15px;
 }
 
 
