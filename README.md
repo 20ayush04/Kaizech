@@ -20,7 +20,7 @@
 <img src="./readme-images/kaizech_desktop_sys.png" />
 
 
-![Kaizech Desktop Demo]("./readme-images/kaizech_img_white.png" "Desktop Demo")
+![Kaizech Desktop Demo]("./readme-images/desktop.png" "Desktop Demo")
 
 ### Prerequisites
 
