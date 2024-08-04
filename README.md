@@ -5,9 +5,9 @@
   
   <img src="./readme-images/kaizech_img_white.png" />
 
-  <h2 align="center">Data Crusaders : make it easy</h2>
+  <h2 align="center">Kaizech - Insight in Every Byte</h2>
 
-  Data Crusaders is fully responsive Lok Sabha Analysis website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
+  Kaizech is fully responsive Lok Sabha Analysis website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
 
   <a href="https://20ayush04.github.io/Lok_Sabha_sys/"><strong>➥ Live Demo</strong></a>
 
