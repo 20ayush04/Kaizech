@@ -17,10 +17,10 @@
 
 ### Demo Screeshots
 
-<img src="./readme-images/kaizech_desktop_sys.png" />
+<img src="./readme-images/desktop.png" />
 
 
-![Kaizech Desktop Demo]("./readme-images/desktop.png" "Desktop Demo")
+<!-- ![Kaizech Desktop Demo]("./readme-images/desktop.png" "Desktop Demo") -->
 
 ### Prerequisites
 
