@@ -3,7 +3,7 @@
   <br />
   <br />
   
-  <img src="./readme-images/Data_Crusaders_logo_sys.png" />
+  <img src="./readme-images/kaizech_img_rmvr.png" />
 
   <h2 align="center">Data Crusaders : make it easy</h2>
 
@@ -17,7 +17,7 @@
 
 ### Demo Screeshots
 
-![Ridex Desktop Demo](./readme-images/hero-banner.png "Desktop Demo")
+![Kaizech Desktop Demo](./readme-images/hero-banner.png "Desktop Demo")
 
 ### Prerequisites
 
