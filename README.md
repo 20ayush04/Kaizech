@@ -17,7 +17,7 @@
 
 ### Demo Screeshots
 
-![Kaizech Desktop Demo](./readme-images/hero-banner.png "Desktop Demo")
+![Kaizech Desktop Demo](./readme-images/kaizech_desktop_sys.png "Desktop Demo")
 
 ### Prerequisites
 

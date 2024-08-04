@@ -255,11 +255,11 @@ button, a { transition: var(--transition); }
 
 .header.active { box-shadow: var(--shadow-1); }
 
-.header.container.logo.logo_{
+/* .header.container.logo.logo_{
   font-weight: bold;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-}
+} */
 
 .header .container {
   height: 70px;
@@ -958,6 +958,7 @@ button, a { transition: var(--transition); }
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
+  
 }
 
 .social-link { font-size: 20px; }
