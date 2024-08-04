@@ -3,7 +3,7 @@
   <br />
   <br />
   
-  <img src="./readme-images/kaizech_img_rmvr.png" />
+  <img src="./readme-images/kaizech_img_white.png" />
 
   <h2 align="center">Data Crusaders : make it easy</h2>
 
