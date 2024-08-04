@@ -9,7 +9,7 @@
 
   Kaizech is fully responsive Lok Sabha Analysis website, <br />Responsive for all devices, built using HTML, CSS, and JavaScript.
 
-  <a href="https://20ayush04.github.io/Lok_Sabha_sys/"><strong>➥ Live Demo</strong></a>
+  <a href="https://20ayush04.github.io/Lok_Sabha_sys/"  target = "_blank"><strong>➥ Live Demo</strong></a>
 
 </div>
 
