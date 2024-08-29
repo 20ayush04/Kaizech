@@ -390,7 +390,7 @@ button, a { transition: var(--transition); }
 
 .hero-banner {
   display: block;
-  background: url("../images/hero-banner_sys_1.png") ;
+  background: url("../images/hero-banner-updated.png") ;
   background-size:contain;
   background-position: left;
   position:absolute;
@@ -902,23 +902,30 @@ button, a { transition: var(--transition); }
 .footer a { color: inherit; }
 
 .footer-top {
-  padding-block: 60px;
+  padding-block: 70px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: flex-start;
-  row-gap: 50px;
-  column-gap: 50px;
+  /* row-gap: 50px;
+  column-gap: 160px; */
 }
 
 .footer-top .logo { margin-bottom: 20px; }
 
 .footer-text {
-  font-size: var(--fs-6);
+  font-family: var(--ff-nunito);
+  font-size: var(--fs-5);
   line-height: 1.8;
 }
 
-.footer-list { font-family: var(--ff-nunito); }
+.footer-list { 
+  font-family: var(--ff-nunito);
+  margin-left: 300px;
+  
+}
+
+.footer-list-2 { font-family: var(--ff-nunito); }
 
 .footer-list:not(:last-of-type) { width: 50%; }
 
@@ -944,6 +951,12 @@ button, a { transition: var(--transition); }
 
 .footer-list:last-child > li:first-child { column-span: all; }
 
+
+
+
+
+
+
 .footer-bottom {
   background: var(--alice-blue-1);
   /* background: var(--gradient); */
@@ -956,7 +969,7 @@ button, a { transition: var(--transition); }
 .social-list {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 20px;
   
 }
