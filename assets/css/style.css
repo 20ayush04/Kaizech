@@ -133,6 +133,7 @@ input { width: 100%; }
 ion-icon { pointer-events: none; }
 
 html {
+  height: 100%;
   font-family: var(--ff-open-sans);
   color: var(--eerie-black);
   font-size: 1rem;
@@ -167,8 +168,14 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 15px; }
+/* .container { padding-inline: 15px; } */
 
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust according to your needs */
+  margin: 0 auto;
+  padding: 0 15px;
+}
 button, a { transition: var(--transition); }
 
 .btn {
@@ -920,7 +927,15 @@ button, a { transition: var(--transition); }
   color: var(--independence);
 }
 
+.footerdash{
+  background: var(--alice-blue-4);
+  color: var(--independence);
+  margin-top: 800px;
+}
+
 .footer a { color: inherit; }
+
+.footerdash a { color: inherit; }
 
 .footer-top {
   padding-block: 70px;
@@ -1024,7 +1039,7 @@ button, a { transition: var(--transition); }
   /**
    * FEATURED CAR
    */
-
+  
   .google-colab-card .card-list { grid-template-columns: 1fr 1fr; }
 
   .google-colab-card .card-price { margin-right: auto; }
