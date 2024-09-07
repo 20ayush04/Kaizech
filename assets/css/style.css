@@ -425,7 +425,8 @@ button, a { transition: var(--transition); }
   margin-left: 180px;
   border-radius: 20px;
   z-index: -1;
-  border-color: var(--alice-blue-2);
+  border: 2px solid var(--black);
+  /* border-color: var(--alice-blue-2); */
   box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.5);  transition : box-shadow 0.2s ease-in-out;
   /* box-shadow: -1px 6px 26px 27px rgba(0, 0, 0, 0.4) , 
               25px 0px 20px -20px rgba(0, 0, 0, 0.4),
